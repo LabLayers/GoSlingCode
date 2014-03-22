@@ -1,0 +1,49 @@
+body 
+{
+	background-image: url('bg.png');
+    height: 100%;
+    width: 100%;
+}
+
+.button, .button:active
+{
+	outline: none;
+	border-radius: 2px;
+}
+
+.login input[type="text"], .login input[type="password"]
+{
+	padding: 15px;
+	outline: none;
+	border-radius: 2px;
+	transition: 0.2s;
+	font-weight: 200;
+}
+
+.login input[type="text"]:focus, .login input[type="password"]:focus
+{
+	border: 1px solid #00cc00;
+	box-shadow: 0px 0px 5px #00cc00;
+}
+
+.login input[type="text"], .login input[type="password"], .button
+{
+	width: 400px;
+}
+
+.login
+{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -200px;
+}
+
+.logo
+{
+	color: white;
+	text-align: center;
+	font-family:  'Courgette', cursive;
+}
