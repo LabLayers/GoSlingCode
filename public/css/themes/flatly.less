@@ -2,25 +2,43 @@
 // Variables
 // --------------------------------------------------
 
+@sidebar-width: 250px;
+
+// Small screen / tablet
+@container-tablet: ((720px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm: ((@container-tablet - @sidebar-width));
+
+// Medium screen / desktop
+@container-desktop: ((940px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md: ((@container-desktop - @sidebar-width));
+
+// Large screen / wide desktop
+@container-large-desktop: ((1140px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-lg: ((@container-large-desktop - @sidebar-width));
+
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark: #7b8a8b;
+@gray-dark: #333;
 // #333
-@gray: #95a5a6;
+@gray: #333;
 // #555
 @gray-light: #b4bcc2;
 // #999
 @gray-lighter: #ecf0f1;
 // #eee
 
-@brand-primary:         #2C3E50;
-@brand-success:         #18BC9C;
-@brand-info: #3498DB;
-@brand-warning:         #F39C12;
-@brand-danger:          #E74C3C;
+@brand-primary:         #434A54;
+@brand-success:         #A0D468;
+@brand-info:            #4A89DC;
+@brand-warning:         #FFCE54;
+@brand-danger:          #E9573F;
 
 //== Scaffolding
 //

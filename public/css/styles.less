@@ -2,7 +2,7 @@
 @import (less) "lib/font-awesome.min.css";
 @import "lib/bootstrap/bootstrap";
 @import "lib/bootstrap-social";
-@import "themes/default";
+@import "themes/flatly";
 
 // Scaffolding
 // -------------------------
@@ -44,13 +44,13 @@ body {
 }
 
 .navbar-brand {
-  background-image: url('../img/npm-logo.png');
-  background-repeat: no-repeat;
-  background-size: 40px;
-  background-position: left center;
-  padding-left: 50px;
-  margin-left: 15px;
-  height: 45px;
+  // background-image: url('../img/npm-logo.png');
+  // background-repeat: no-repeat;
+  // background-size: 40px;
+  // background-position: left center;
+  // padding-left: 50px;
+  // margin-left: 15px;
+  // height: 45px;
 }
 
 // Social Buttons
@@ -96,3 +96,40 @@ body {
   padding: 3px;
   bottom: 25px;
 }
+
+// Sidebar
+
+body {
+  padding-left: 250px;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background: @gray-dark;
+    width: 100%;
+    max-width: @sidebar-width;
+    font-size: 13pt;
+    ul, li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 0!important;
+    }
+    a {
+      display: block;
+      color: white;
+      transition: 0.1s;
+      padding: 30px!important;
+      &:hover {
+        background-color: lighten(@gray-dark,15%);
+        cursor: pointer;
+        text-shadow: 0.5em 0.50em 0.05em #black;
+        border-left: 5px solid #FF2800;
+        text-decoration: none;
+      }
+  }
+}
+
