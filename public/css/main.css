@@ -22,4 +22,23 @@ a.logo:hover
 {
 	border: none;
 	background-color: rgb(0, 0, 0, 0.0);
-};
+}
+
+p.lead
+{
+    text-shadow:
+    -1px -1px 12px rgb(38, 41, 34),
+    1px -1px 12px rgb(38, 41, 34),
+    -1px 1px 12px rgb(38, 41, 34),
+    1px 1px 12px rgb(38, 41, 34);
+    font-size: 16pt;
+}
+
+h1.lead
+{
+	text-shadow:
+    -1px -1px 12px rgb(38, 41, 34),
+    1px -1px 12px rgb(38, 41, 34),
+    -1px 1px 12px rgb(38, 41, 34),
+    1px 1px 12px rgb(38, 41, 34);
+}
