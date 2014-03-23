@@ -8,7 +8,10 @@ html
     meta(name='author', content='')
     title #{title} | Sling Code!
     != css('styles')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Courgette')
+    != css('main')
     != js('application')
+
   body
     #wrap
       include partials/navigation

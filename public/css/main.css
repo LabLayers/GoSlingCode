@@ -1,0 +1,25 @@
+.sidebar
+{
+	background-image: url('../img/sbg.png');
+
+}
+
+.sidebar-header > ul > li > a
+{
+	color: #ddd !important;
+}
+.title_hr
+{
+	width: 71%;
+}
+
+a.logo
+{
+	font-family: 'Courgette', cursive !important;
+}
+
+a.logo:hover
+{
+	border: none;
+	background-color: rgb(0, 0, 0, 0.0);
+};

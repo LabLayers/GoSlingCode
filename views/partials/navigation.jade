@@ -7,7 +7,8 @@
       span.icon-bar
     ul
       li
-        a.logo(href='/') Sling Code!
+        a.logo(href='/') Go Sling!
+        hr.title_hr
       if user
         li.dropdown(class=title=='Account Management'?'active':undefined)
           a.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -18,14 +19,14 @@
             | #{user.profile.name || user.email || user.id}&nbsp;
             i.caret
       else
-        li(class=title=='Home'?'active':undefined)
+      li(class=title=='Home'?'active':undefined)
           a(href='/') Home
-      li(class=title=='Tracks'?'active':undefined)
-        a(href='/tracks') Tracks
+      //li(class=title=='Tracks'?'active':undefined)
+        //a(href='/tracks') Tracks
       li(class=title=='Learn'?'active':undefined)
         a(href='/learn') Learn
-      li(class=title=='API Browser'?'active':undefined)
-        a(href='/api') API
+      //li(class=title=='API Browser'?'active':undefined)
+        //a(href='/api') API
       li(class=title=='Contact'?'active':undefined)
         a(href='/contact') Contact
     .account
