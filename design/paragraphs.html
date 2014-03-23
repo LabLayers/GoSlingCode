@@ -17,9 +17,17 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" type="text/css" href="jquery.js">
-  <link rel="icon" type="image/png" href="favicon.png">
+  
   <link rel="stylesheet" type="text/css" href="css/codemirror.css">
   <link rel="stylesheet" type="text/css" href="theme/monokai.css">
+  <link rel="stylesheet" type="text/css" href="theme/3024-night.css">
+  <link rel="stylesheet" type="text/css" href="theme/abiance.css">
+  <link rel="stylesheet" type="text/css" href="theme/base16-dark.css">
+  <link rel="stylesheet" type="text/css" href="theme/blackboard.css">
+  <link rel="stylesheet" type="text/css" href="theme/cobalt.css">
+  <link rel="stylesheet" type="text/css" href="theme/elegant.css">
+  <link rel="stylesheet" type="text/css" href="theme/erlang-dark.css">
+  <link rel="stylesheet" type="text/css" href="theme/lesser-dark.css">
   <script type="text/javascript" src="lib/codemirror.js"></script>
   
   <script type="text/javascript" src="require.js"></script>
@@ -36,17 +44,17 @@
       </a>
     </li>
     <li>
-      <a href="#">
-        Hello World<div class="arrow-right"></div>
+      <a href="home.html">
+        Hello World
       </a>
     </li>
     <li>
-      <a href="#">
-        Paragraphs
+      <a href="">
+        Paragraphs<div class="arrow-right"></div>
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="formatting.html">
         Formatting
       </a>
     </li>
@@ -59,11 +67,9 @@
 <div class="tutor">
 </div>
 <div class="container">
-  <textarea id="code_area" autofocus>
-  </textarea>
+  <textarea id="code_area" autofocus></textarea>
 </div>
 <div class="tab">
-  <img width="15" height="15" src="favicon.png" style="border-radius:2px">
   <span class="title"></span>
 </div>
 <div class="html_area">
@@ -87,7 +93,7 @@ require([
     autofucus: true,
     lineWrapping: true
   });
-  doc.setValue('');
+  doc.setValue('<!DOCTYPE html>\n\n<html>\n  <head>\n    <title>Paragraphs</title>\n  </head>\n  <body>\n  </body>\n</html>');
 
   setInterval( function() {refreshHTML(doc)}, 1000);
 });
