@@ -42,3 +42,17 @@ h1.lead
     -1px 1px 12px rgb(38, 41, 34),
     1px 1px 12px rgb(38, 41, 34);
 }
+
+#learn
+{
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea
+{
+	/*width: 100%;*/
+	resize: none;
+	transition: 0.2s;
+	margin-right: 50px;
+} 
