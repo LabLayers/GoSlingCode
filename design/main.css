@@ -113,10 +113,27 @@ body
 .tutor
 {
 	position: absolute;
-	top: 57px;
-	height: 30px;
-	width: 550px;
-	left: 250px;
+	top: 32px;
+	width: 520px;
+	left: 270px;
+	height: 40px;
+	color: white;
+	padding: 5px;
+	background-color: rgb(39, 40, 34);
+	border-radius: 2;
+}
+
+.tutor-arrow
+{
+	width: 0; 
+	height: 0; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 9px solid rgb(39, 40, 34);
+	float: right;
+	position: absolute;
+	left: 261px;
+	top: 49px;
 }
 
 .tutor .button
@@ -160,7 +177,7 @@ body
 	width: 200px;
 	height: 50px;
 	position: absolute;
-	top: 57px;
+	top: 34px;
 	left: 820px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
@@ -228,3 +245,45 @@ body
 .CodeMirror-scroll {  
     overflow: auto; 
 }  
+
+.csj {
+	position: absolute;
+	top: 37px;
+	left: 210px;
+	z-index: 100;
+}
+
+#typed-cursor{
+			opacity: 1;
+			font-weight: 100;
+			-webkit-animation: blink 0.7s infinite;
+			-moz-animation: blink 0.7s infinite;
+			-ms-animation: blink 0.7s infinite;
+			-o-animation: blink 0.7s infinite;
+			animation: blink 0.7s infinite;
+		}
+		@-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-webkit-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-moz-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-ms-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-o-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
