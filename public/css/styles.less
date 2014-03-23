@@ -101,6 +101,20 @@ footer {
 header, .page-header {
   background: @brand-primary;
   .dark-text-shadow;
+  position: relative;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    background: rgba(0,0,0,.5);
+  }
+  & > * {
+    position: relative;
+  }
 }
 
 header, .page-header, section {
@@ -335,6 +349,7 @@ body {
 // Headerbar
 .headerbar {
   position: fixed;
+  z-index: 800;
   top: 0px;
   left: 200px;
   width: 100%;
