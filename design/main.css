@@ -89,7 +89,7 @@ body
 
 .sidebar li:hover:not(:first-child)
 {
-	background-color: #333;
+	background-color: rgba(51, 51, 51, 0.5);
 	cursor: pointer;
 	/*font-size: 14pt;*/
 	text-shadow: 0.5em 0.50em 0.05em #black;	
@@ -110,6 +110,20 @@ body
 	cursor: default;
 }
 
+.tutor
+{
+	position: absolute;
+	top: 57px;
+	height: 30px;
+	width: 550px;
+	left: 250px;
+}
+
+.tutor .button
+{
+	float: right;
+}
+
 .container
 {
 	position: absolute;
@@ -123,17 +137,44 @@ body
 {
 	width: 550px;
 	float: left;
-	height: 600px;
+	height: 584px;
 	background: white;
 	position: absolute;
 	left: 820px;
 	top: 87px;
 	border-radius: 2px;
 	padding: 7px;
+	border-top: 2px solid #ddd;
 }
 
 .CodeMirror
 {
 	border-radius: 2px;
 	height: 600px;
+}
+
+.tab
+{
+	background-color: #ddd;
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	top: 57px;
+	left: 820px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-left: 7px;
+	padding-top: 5px;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 18px solid rgba(249, 38, 114, 0.7);
+	float: right;
+	position: relative;
+	left: 30px;
+	bottom: 3px;
 }

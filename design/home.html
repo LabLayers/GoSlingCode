@@ -14,12 +14,20 @@
   <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
   <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" type="text/css" href="jquery.js">
   
   <link rel="stylesheet" type="text/css" href="lib/codemirror.css">
-  <link rel="stylesheet" type="text/css" href="monokai.css">
+  <link rel="stylesheet" type="text/css" href="theme/monokai.css">
+  <link rel="stylesheet" type="text/css" href="theme/3024-night.css">
+  <link rel="stylesheet" type="text/css" href="theme/abiance.css">
+  <link rel="stylesheet" type="text/css" href="theme/base16-dark.css">
+  <link rel="stylesheet" type="text/css" href="theme/blackboard.css">
+  <link rel="stylesheet" type="text/css" href="theme/cobalt.css">
+  <link rel="stylesheet" type="text/css" href="theme/elegant.css">
+  <link rel="stylesheet" type="text/css" href="theme/erlang-dark.css">
+  <link rel="stylesheet" type="text/css" href="theme/lesser-dark.css">
   <script type="text/javascript" src="lib/codemirror.js"></script>
   
   <script type="text/javascript" src="require.js"></script>
@@ -42,7 +50,7 @@
     </li>
     <li>
       <a href="#">
-        Paragraphs
+        Paragraphs<div class="arrow-right"></div>
       </a>
     </li>
     <li>
@@ -56,10 +64,14 @@
       </a>
     </li>
 </div>
-
+<div class="tutor">
+</div>
 <div class="container">
   <textarea id="code_area">
   </textarea>
+</div>
+<div class="tab">
+  <span class="title"></span>
 </div>
 <div class="html_area">
 </div>
@@ -68,6 +80,8 @@
 {
   var html_val = doc.getValue();
   $('.html_area').html(html_val);
+  var title = html_val.match('<title>(.*)</title>');
+  $('.tab .title').html(title[1]);
   return;
 }
 require([
@@ -77,6 +91,7 @@ require([
     lineNumbers: true,
     mode: "htmlmixed",
     theme: "monokai",
+    autofucus: true,
     lineWrapping: true
   });
 
@@ -86,7 +101,6 @@ require([
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/default.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-X to your website's ID. -->
 <script>
   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
