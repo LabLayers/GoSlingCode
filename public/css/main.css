@@ -16,6 +16,7 @@
 a.logo
 {
 	font-family: 'Courgette', cursive !important;
+	padding-bottom: 0px;
 }
 
 a.logo:hover
@@ -55,4 +56,4 @@ h1.lead
 	resize: none;
 	transition: 0.2s;
 	margin-right: 50px;
-} 
+}
