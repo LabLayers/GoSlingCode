@@ -145,6 +145,7 @@ body
 	border-radius: 2px;
 	padding: 7px;
 	border-top: 2px solid #ddd;
+	overflow: hidden;
 }
 
 .CodeMirror
@@ -223,3 +224,7 @@ body
 	left: 30px;
 	bottom: 3px;
 }
+
+.CodeMirror-scroll {  
+    overflow: auto; 
+}  
