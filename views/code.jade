@@ -42,13 +42,28 @@ block content
     setInterval( function() {refreshHTML(doc)}, 1000);
     });
   script(src='js/typed.js', type='text/javascript')
+  script(src='js/speak.js', type='text/javascript')
   script.
-    var tutorial = ["Hello world! My name is Code Slingin' Joe! Nice to meet you!", "I am going to show you how to build your very first website! Are you ready?", "Okay great! The language that we will be writing in is called HTML.", "That stands for Hypertext Markup Laungage, but most people know it as HTML.", "The way we start webpages is with the <html> tag.", "Start your page by typing <html>", "For almost every tag, we have to close it, so add </html> on the next line to close the document.", "There are two main parts of a html document; the <head> and the <body>.", "First, lets explore the <head> tag a bit.", "Inside <head> and </head> is where we set up the document.", "For now, lets just add a page title.", "First, add the <head> tag and close it with </head> inside of the <html> tag.", "Then, inside of the <head> tag, add the title tag <title> and add its closing tag, </title>", "Inside of the <title> tag is where we will set our title.", "So inside of the title, type Hello World, and look over to the right.", "In our simulator, you should see Hello World in the tab on the right.", "Great job!"];
+    var tutorial = [];
     var index = 0;
+    var json_tutorials = $.getJSON('tutorials.json').done(function(data){
+      tutorial_json = data["#{tutorial_name}"];
+      for (var key in tutorial_json)
+      {
+        tutorial.push(tutorial_json[key]);
+      }
+      next();
+    });
+    
+    
+    
+
 
     function next(){
+
       $('.tutorial').remove();
       $('.tutor').html('<span class="tutorial"></span>');
+      speak(tutorial[index]);
       $(".tutorial").typed({
         strings: [tutorial[index]],
         typeSpeed: 0,
@@ -62,4 +77,4 @@ block content
       });
       index++;
     }
-    next();
+    

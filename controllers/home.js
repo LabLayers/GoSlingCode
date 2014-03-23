@@ -23,6 +23,11 @@ exports.learn = function(req, res) {
 
 exports.code = function(req, res) {
 	res.render('code', {
-		title: 'Code'
+		title: 'Code',
+    tutorial_name: 'Paragraphs'
 	});
 };
+
+exports.tutorial = function(req, res) {
+
+}

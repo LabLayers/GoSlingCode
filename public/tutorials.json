@@ -1,0 +1,41 @@
+{
+	"Hello World": {
+		"1":  "Hello world! My name is Code Slingin' Joe! Nice to meet you!",
+		"2": "I am going to show you how to build your very first website! Are you ready?",
+		"3": "Okay great! The language that we will be writing in is called HTML.",
+		"4": "That stands for Hypertext Markup Laungage, but most people know it as HTML.",
+		"5": "The way we start webpages is with the <html> tag.",
+		"6": "Start your page by typing <html>",
+		"7": "For almost every tag, we have to close it, so add </html> on the next line to close the document.",
+		"8": "There are two main parts of a html document; the <head> and the <body>.",
+		"9": "First, lets explore the <head> tag a bit.",
+		"10": "Inside <head> and </head> is where we set up the document.",
+		"11": "For now, lets just add a page title.",
+		"12": "First, add the <head> tag and close it with </head> inside of the <html> tag.",
+		"13": "Then, inside of the <head> tag, add the title tag <title> and add its closing tag, </title>",
+		"14": "Inside of the <title> tag is where we will set our title.",
+		"15": "So inside of the title, type Hello World, and look over to the right.",
+		"16": "In our simulator, you should see Hello World in the tab on the right.",
+		"17": "Now to edit the page content. We can put code inside of the <body> tag and it will show up in the window.",
+		"18": "First, we have to add our <body> tag. After </head>, add <body>, and then close the body tag with </body>.",
+		"19": "Inside of the body tag, write Hello World. You should see Hello World in the body of the simulator.",
+		"20": "Great job! Congratulations, you just build your first website!"
+	},
+
+	"Paragraphs": {
+		"1": "You have made it onwards, you experienced coder.",
+		"2": "I am now going to teach you about Paragraphs.",
+		"3": "In writing, a paragraph is used to express an idea in one difinitive area, and in HTML it is used for the same thing.",
+		"4": "To use the Paragraph tag, open and close p tags, like this. <p></p>",
+		"5": "Note: Paragraph tags are mainly used in the BODY of your HTML, not the HEAD.",
+		"6": "Now try writing your first paragraph in the body of your HTML. Remember that paragraph tags are <p></p>",
+		"7": "You can write whatever you want. Press continue when you are ready to move on.",
+		"8": "So now that you have learned paragraphs, I am going to teach you another type of text tag",
+		"9": "Header tags create font that is usually easily differentiated from the paragraph tags.",
+		"10": "There are 6 different types of Header tags. The first one open and closes like this : <h1></h1>",
+		"11": "For every other Header tag, you just change the numbers, which range from 1-6. ex. <h1></h1> or <h3></h3>",
+		"12": "Try making your own header AND paragraph now. You can change your header size by changing the numbers in your header tag",
+		"13": "Click continue when you have finished.",
+		"14": "You have finished this text tutorial! Congrats."
+	}
+}

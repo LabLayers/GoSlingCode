@@ -106,6 +106,7 @@ app.get('/', homeController.index);
 app.get('/tracks', homeController.tracks);
 app.get('/learn', homeController.learn);
 app.get('/code', homeController.code);
+app.get('/tutorial', homeController.tutorial);
 
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
