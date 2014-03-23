@@ -196,6 +196,7 @@ body {
   background: @dark;
   width: 100%;
   max-width: @sidebar-width;
+  background-image: url('../img/sbg.png');
   ul, li {
     list-style: none;
     margin: 0;
@@ -231,6 +232,10 @@ body {
     font-family: 'Leckerli One', cursive;
     font-size: 120%;
     cursor: default;
+    &:hover {
+      border: none;
+      background-color: rgb(0, 0, 0, 0.0);
+    }
   }
   img {
     width: 50px;
@@ -239,5 +244,10 @@ body {
     float: left;
     margin-right: 6px;
   }
+  .sidebar-header > ul > li > a {
+    color: #ddd !important;
+  }
+  .title_hr {
+    width: 71%;
+  }
 }
-
