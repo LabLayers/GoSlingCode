@@ -1,7 +1,7 @@
 extends ../layout
 
 block content
-  form(method='POST')
+  form.normal(method='POST')
     legend Sign In
     input(type='hidden', name='_csrf', value=token)
     .col-sm-8.col-sm-offset-2
