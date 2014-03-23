@@ -24,7 +24,7 @@ exports.learn = function(req, res) {
 exports.code = function(req, res) {
 	res.render('code', {
 		title: 'Code',
-    tutorial_name: 'Paragraphs'
+    tutorial_name: req.query.lesson
 	});
 };
 

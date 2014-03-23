@@ -1,5 +1,5 @@
 {
-	"Hello World": {
+	"html-basics-part-1": {
 		"1":  "Hello world! My name is Code Slingin' Joe! Nice to meet you!",
 		"2": "I am going to show you how to build your very first website! Are you ready?",
 		"3": "Okay great! The language that we will be writing in is called HTML.",
@@ -22,7 +22,7 @@
 		"20": "Great job! Congratulations, you just build your first website!"
 	},
 
-	"Paragraphs": {
+	"html-basics-part-2": {
 		"1": "You have made it onwards, you experienced coder.",
 		"2": "I am now going to teach you about Paragraphs.",
 		"3": "In writing, a paragraph is used to express an idea in one difinitive area, and in HTML it is used for the same thing.",
