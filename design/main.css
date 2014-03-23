@@ -28,6 +28,13 @@ body
 	font-weight: 200;
 	width: 100%;
 }
+.links-logo{
+	color: white;
+
+}
+.links-logo:hover{
+	text-decoration: underline;
+}
 .login input[type="text"]:focus, .login input[type="email"]:focus
 {
 	border: 1px solid #00cc00;
@@ -55,9 +62,19 @@ body
     margin: -250px 0 0 -200px;
 }
 
+.register{
+	margin: -275px 0 0 -200px !important;
+}
+
 .logo
 {
 	color: white;
 	text-align: center;
 	font-family:  'Courgette', cursive;
+}
+.logo-min
+{
+	color: white;
+	text-align: center;
+	font-size: 12pt !important;
 }
