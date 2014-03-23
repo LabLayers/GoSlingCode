@@ -26,6 +26,7 @@ block content
     img(width='15', height='15', src='img/favicon.png', style='border-radius: 2px;')
     span.title
   .html_area
+  .btn.btn-primary(style='position: absolute; right: -674px;') Download Output
   script.
     function refreshHTML(doc)
     {
@@ -80,7 +81,7 @@ block content
         loopCount: false,
         callback: function(){
           $('.typed-cursor').hide();
-          $('.tutor').append('<a style="float:right" href="javascript:next()">Continue</a>');
+          $('.tutor').append('<a style="float:right" href="javascript:next()"><b>Continue</b></a>');
         }
       });
       index++;
