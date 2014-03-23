@@ -1,8 +1,20 @@
 extends layout
 
 block content
-  h1 Bootstrap starter template
-  p.lead
-    | Use this document as a way to quickly start any new project.
-    br
-    | All you get is this text and a mostly barebones HTML document.
+  header#learn(style='background: url(http://i.imgur.com/JbjF1PR.jpg);')
+    h1 Sling Code!
+    p.lead
+      | Learn from the world's experts in coding and beyond.
+    if secrets.githubAuth
+      a.btn.btn-block(href='/auth/github')
+        i.fa.fa-github-alt
+        | Login with GitHub
+    | &nbsp; &nbsp;
+    a.btn(onclick="launch#login")
+      i.fa.fa-key
+      | Login
+
+  section
+    h1 Create Something Awesome
+    p.lead
+      | Marketing Material Here

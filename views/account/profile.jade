@@ -20,9 +20,14 @@ block content
         label.radio
           input(type='radio', checked=user.profile.gender=='male', name='gender', value='male', data-toggle='radio')
           span Male
+        br
         label.radio
           input(type='radio', checked=user.profile.gender=='female', name='gender', value='female', data-toggle='radio')
           span Female
+        br
+        label.radio
+          input(type='radio', checked=user.profile.gender=='other', name='gender', value='other', data-toggle='radio')
+          span Other
     .form-group
       label.col-sm-2.control-label(for='location') Location
       .col-sm-4

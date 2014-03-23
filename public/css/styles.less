@@ -6,6 +6,7 @@
 
 @import "lib/buttons";
 @import "lib/grid";
+@import "lib/modal";
 
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Leckerli+One);
@@ -17,18 +18,6 @@
 
 // Scaffolding
 // -------------------------
-
-.dark-text-shadow {
-  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-}
-
-.border-link {
-  display: inline-block;
-  border-bottom: 1px dotted;
-  &:hover {
-    border-bottom: 1px solid;
-  }
-}
 
 ::selection {
   background: @brand-info;
@@ -58,6 +47,7 @@ a {
   min-height: 100%;
   height: auto !important;
   height: 100%;
+  margin-top: -24px;
 }
 
 footer {
@@ -78,6 +68,51 @@ footer {
   path {
     fill: @black-10;
     stroke: rgba(0,0,0,0);
+  }
+}
+
+.dark-text-shadow {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.border-link {
+  display: inline-block;
+  border-bottom: 1px dotted;
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+header, .page-header {
+  background: @brand-primary;
+  .dark-text-shadow;
+}
+
+header, .page-header, section {
+  padding: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+form:not(.normal) {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 1px rgba(0,0,0,.25);
+  .btn {
+    .right;
+    margin-top: -3em;
+  }
+  input, textarea {
+    border: none;
+    min-width: 300px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    border-bottom: 2px dashed @black-20;
+    &:focus {
+      border-bottom: 2px dashed @black-50;
+    }
   }
 }
 
@@ -196,6 +231,13 @@ body {
     font-family: 'Leckerli One', cursive;
     font-size: 120%;
     cursor: default;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 6px;
   }
 }
 
