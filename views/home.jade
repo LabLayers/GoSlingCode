@@ -5,15 +5,15 @@ block content
     h1.lead Go Sling Code!
     p.lead
       | An interactive code tutorial website tailored for young kids.
-    if secrets.githubAuth
-      a.btn.btn-block(href='/auth/github')
-        i.fa.fa-github-alt
-        | Login with GitHub
-    | &nbsp; &nbsp;
-    a.btn(onclick="launch('login')")
-      i.fa.fa-key
-      | Login
-
+    if !user
+      if secrets.githubAuth
+        a.btn.btn-block(href='/auth/github')
+          i.fa.fa-github-alt
+          | Login with GitHub
+      | &nbsp; &nbsp;
+      a.btn(onclick="launch('login')")
+        i.fa.fa-key
+        | Login
   section
     h1 Learning to program is easy with Go Sling!
     p.content
