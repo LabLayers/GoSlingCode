@@ -1,27 +1,57 @@
 .btn, button {
-  display: block;
+  display: inline-block;
   margin-bottom: 5px;
   padding: 15px 20px;
   font-weight: bold;
   line-height: 1;
-  color: #7a43b6;
+  color: @brand-success;
   text-align: center;
   letter-spacing: -1px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
-  
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+
   &:hover,
-  &:active {
+  &:active, &.inverse {
     color: #fff;
     text-decoration: none;
-    background-color: #7a43b6;
-    border-color: #7a43b6;
+    background-color: @brand-success;
+    border-color: @brand-success;
   }
 
   &:active {
     box-shadow: inset 0 3px 6px rgba(0,0,0,.3);
-    border-color: darken(#7a43b6, 10%);
+    border-color: darken(@brand-success, 10%);
   }
 }
+
+.btn-border {
+  background: none;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+  &:hover {
+    background: rgba(255,255,255,.2)
+  }
+}
+
+.btn-alt {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+  &:hover {
+    background: rgba(255,255,255,.2)
+  }
+}
+
+.btn-primary { background-color: @brand-primary; color: white; }
+.btn-success { background-color: @brand-success; color: white; }
+.btn-warning { background-color: @brand-warning; color: white; }
+.btn-danger  { background-color: @brand-danger; color: white; }
+.btn-info    { background-color: @brand-info; color: white; }
 

@@ -7,13 +7,34 @@
 @import "lib/buttons";
 @import "lib/grid";
 
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700);
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
+
 // Vars
 // -------------------------
 
-@sidebar-width: 250px;
+@sidebar-width: 200px;
 
 // Scaffolding
 // -------------------------
+
+.dark-text-shadow {
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.border-link {
+  display: inline-block;
+  border-bottom: 1px dotted;
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+::selection {
+  background: @brand-info;
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
 
 html, body {
   height: 100%;
@@ -21,6 +42,8 @@ html, body {
 
 body {
   padding-top: 0px;
+  font-family: "Maven Pro", Arial;
+  font-size: 18px;
 }
 
 a {
@@ -28,17 +51,34 @@ a {
   color: @brand-primary;
 }
 
+.left { float: left; }
+.right { float: right; }
+
 #wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
 }
 
-#footer {
-  font-size: 12px;
-  padding-top: 40px;
+footer {
+  .dark-text-shadow;
+  background: @brand-success;
+  color: white;
+  margin-top: -10px;
   padding-bottom: 40px;
   height: 100px;
+  line-height: 1.5em;
+  a {
+    color: white;
+  }
+}
+
+#waves {
+  background: @brand-success;
+  path {
+    fill: @gray-10;
+    stroke: rgba(0,0,0,0);
+  }
 }
 
 // Navbar
@@ -109,36 +149,53 @@ a {
 // Sidebar
 
 body {
-  padding-left: 250px;
+  padding-left: @sidebar-width;
+  background: @gray-10;
 }
 
 .sidebar {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    background: @black-80;
-    width: 100%;
-    max-width: @sidebar-width;
-    font-size: 13pt;
-    ul, li {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      padding-left: 0!important;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  background: @dark;
+  width: 100%;
+  max-width: @sidebar-width;
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 0!important;
+  }
+  a {
+    display: block;
+    color: white;
+    transition: 0.1s;
+    padding: 30px!important;
+    &:hover {
+      background-color: @black-70;
+      cursor: pointer;
+      text-shadow: 0.5em 0.50em 0.05em #black;
+      border-left: 5px solid @brand-danger;
+      text-decoration: none;
     }
-    a {
-      display: block;
-      color: white;
-      transition: 0.1s;
-      padding: 30px!important;
-      &:hover {
-        background-color: @black-70;
-        cursor: pointer;
-        text-shadow: 0.5em 0.50em 0.05em #black;
-        border-left: 5px solid #FF2800;
-        text-decoration: none;
-      }
+    &.active:after {
+      width: 0;
+      height: 0;
+      border-top: 15px solid rgba(0, 0, 0, 0);
+      border-bottom: 15px solid rgba(0, 0, 0, 0);
+      border-right: 18px solid @brand-danger;
+      float: right;
+      position: relative;
+      left: 30px;
+      bottom: 3px;
+      content: ' '
+    }
+  }
+  a.logo {
+    font-family: 'Leckerli One', cursive;
+    font-size: 120%;
+    cursor: default;
   }
 }
 
