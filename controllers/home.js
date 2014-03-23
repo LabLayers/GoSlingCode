@@ -8,3 +8,15 @@ exports.index = function(req, res) {
     title: 'Home'
   });
 };
+
+exports.tracks = function(req, res) {
+  res.render('tracks', {
+    title: 'Tracks'
+  });
+};
+
+exports.learn = function(req, res) {
+  res.render('learn', {
+    title: 'Learn'
+  });
+};
