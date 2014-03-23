@@ -31,9 +31,9 @@
         a(href='/contact') Contact
     .account
       if !user
-        a(onlick='launch("login")' class=title=='Login'?'active':undefined) Login
+        a(onclick='launch("login")' class=title=='Login'?'active':undefined) Login
         if secrets.localAuth
-          a(onlick='launch("signup")' class=title=='Create Account'?'active':undefined) Signup
+          a(onclick='launch("signup")' class=title=='Create Account'?'active':undefined) Signup
       else
         ul.dropdown-menu
           li: a(href='/account') My Account
