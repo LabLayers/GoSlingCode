@@ -105,6 +105,7 @@ app.use(express.errorHandler());
 app.get('/', homeController.index);
 app.get('/tracks', homeController.tracks);
 app.get('/learn', homeController.learn);
+app.get('/code', homeController.code);
 
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);

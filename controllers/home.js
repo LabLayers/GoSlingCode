@@ -20,3 +20,9 @@ exports.learn = function(req, res) {
     title: 'Learn'
   });
 };
+
+exports.code = function(req, res) {
+	res.render('code', {
+		title: 'Code'
+	});
+};

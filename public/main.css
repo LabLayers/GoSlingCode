@@ -1,121 +1,14 @@
-body 
+body
 {
-	background-image: url('css/bg.png');
-    height: 100%;
-    width: 100%;
-}
-
-.button, .button:active
-{
-	outline: none;
-	border-radius: 2px;
-}
-
-.login input[type="text"], .login input[type="password"]
-{
-	padding: 15px;
-	outline: none;
-	border-radius: 2px;
-	transition: 0.2s;
-	font-weight: 200;
-}
-
-.login input[type="text"]:focus, .login input[type="password"]:focus
-{
-	border: 1px solid #00cc00;
-	box-shadow: 0px 0px 5px #00cc00;
-}
-
-.login input[type="text"], .login input[type="password"], .button
-{
-	width: 400px;
-}
-
-.login
-{
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -150px 0 0 -200px;
-}
-
-.logo
-{
-	color: white;
-	text-align: center;
-	font-family:  'Courgette', cursive;
-}
-
-.sidebar
-{
-	background-color: #333;
-	background-image: url('css/sbg.png');
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	height: 100%;
-	width: 200px;
-}
-
-.sidebar a
-{
-	text-decoration: none;
-	color: #ccc;
-	outline: none;
-}
-
-.sidebar > ul
-{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.sidebar li
-{
-	padding: 30px;
-	font-size: 13pt;
-	transition: 0.1s;
-	text-shadow: 0.1em 0.1em 0.05em #333
-}
-
-.sidebar li:first-child
-{
-	padding-bottom: 0px;	
-	margin-bottom: 0px;	
-}
-
-.sidebar li:hover:not(:first-child)
-{
-	background-color: rgba(51, 51, 51, 0.5);
-	cursor: pointer;
-	/*font-size: 14pt;*/
-	text-shadow: 0.5em 0.50em 0.05em #black;	
-	border-left: 5px solid #ff2800;
-}
-
-.sidebar .title
-{
-	font-family:  'Courgette', cursive;
-	font-size: 17pt;
-	cursor: default;
-}
-
-.sidebar hr
-{
-	padding-bottom: 0px;
-	margin-bottom: 15px;	
-	cursor: default;
+	background-image: url('img/bg.png');
 }
 
 .tutor
 {
 	position: absolute;
-	top: 32px;
-	width: 520px;
-	left: 270px;
+	top: 10px;
+	width: 540px;
+	left: 134px;
 	height: 40px;
 	color: white;
 	padding: 5px;
@@ -132,8 +25,8 @@ body
 	border-right: 9px solid rgb(39, 40, 34);
 	float: right;
 	position: absolute;
-	left: 261px;
-	top: 49px;
+	left: 125px;
+	top: 28px;
 }
 
 .tutor .button
@@ -144,8 +37,8 @@ body
 .container
 {
 	position: absolute;
-	top: 87px;
-	left: 250px;
+	top: 67px;
+	left: 115px;
 	width: 550px;
 	float: left;
 }
@@ -157,8 +50,8 @@ body
 	height: 584px;
 	background: white;
 	position: absolute;
-	left: 820px;
-	top: 87px;
+	left: 700px;
+	top: 67px;
 	border-radius: 2px;
 	padding: 7px;
 	border-top: 2px solid #ddd;
@@ -177,8 +70,8 @@ body
 	width: 200px;
 	height: 50px;
 	position: absolute;
-	top: 34px;
-	left: 820px;
+	top: 35px;
+	left: 700px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	padding-left: 7px;
@@ -202,7 +95,6 @@ body
     width: 150px;
     border-radius: 10px 10px 0px 0px;
     background-color: #ddd;
-    position: relative;
     border: 2px solid #ddd;
     color: #000;
 }
@@ -248,8 +140,8 @@ body
 
 .csj {
 	position: absolute;
-	top: 37px;
-	left: 210px;
+	top: 27px;
+	left: 80px;
 	z-index: 100;
 }
 
