@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+=======
+.sidebar
+{
+	background-image: url('../img/sbg.png');
+
+}
+
+.sidebar-header > ul > li > a
+{
+	color: #ddd !important;
+}
+.title_hr
+{
+	width: 71%;
+}
+
+a.logo
+{
+	font-family: 'Courgette', cursive !important;
+}
+
+a.logo:hover
+{
+	border: none;
+	background-color: rgb(0, 0, 0, 0.0);
+}
+
+p.lead
+{
+    text-shadow:
+    -1px -1px 12px rgb(38, 41, 34),
+    1px -1px 12px rgb(38, 41, 34),
+    -1px 1px 12px rgb(38, 41, 34),
+    1px 1px 12px rgb(38, 41, 34);
+    font-size: 16pt;
+}
+
+h1.lead
+{
+	text-shadow:
+    -1px -1px 12px rgb(38, 41, 34),
+    1px -1px 12px rgb(38, 41, 34),
+    -1px 1px 12px rgb(38, 41, 34),
+    1px 1px 12px rgb(38, 41, 34);
+}
+>>>>>>> FETCH_HEAD
