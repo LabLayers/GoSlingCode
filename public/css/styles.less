@@ -7,6 +7,7 @@
 @import "lib/buttons";
 @import "lib/grid";
 @import "lib/modal";
+@import "lib/icons";
 
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Leckerli+One);
@@ -42,6 +43,12 @@ a {
 
 .left { float: left; }
 .right { float: right; }
+.center { text-align: center; }
+
+.transition {
+  transition: 0.25s all ease;
+  -webkit-transition: 0.25s all ease;
+}
 
 #wrap {
   min-height: 100%;
@@ -82,6 +89,12 @@ footer {
   &:hover {
     border-bottom: 1px solid;
   }
+}
+
+.alert {
+  background: @brand-danger;
+  color: white;
+  padding: 20px;
 }
 
 header, .page-header {
@@ -251,3 +264,63 @@ body {
     width: 71%;
   }
 }
+
+// Lessons
+#lessons {
+  a {
+    padding: 10px;
+    background: gray;
+    color: white;
+    display: block;
+    height: 200px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    text-align: center;
+    border-bottom: 4px solid rgba(0,0,0,.5);  }
+}
+
+// Contact
+#postcard {
+  background: url(http://i.imgur.com/ljw0stV.png);
+  padding: 80px 20px;
+  box-shadow: 0 0 4px gray;
+  border-top: 4px solid @brand-primary;
+  border-bottom: 4px solid @brand-danger;
+  animation: 1s bounce linear;
+  -webkit-animation: 1s bounce linear;
+  &.sent {
+    animation: 1s lightSpeedOut linear;
+    -webkit-animation: 1s lightSpeedOut linear;
+  }
+  textarea, input:not(.btn) {
+      font-family: Coming Soon, Arial;
+      display: block;
+      width: 80%;
+      margin: auto;
+      font-size: 20px;
+      line-height: 20px;
+      background: none;
+      border: none;
+      border-radius: 0px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid rgba(0,0,0,.25);
+      background: rgba(255,255,255,.5);
+      &:focus {
+        border-bottom-color: @brand-success;
+        background: white;
+      }
+      &:invalid {
+        border-bottom-color: @brand-danger;
+      }
+  }
+  .btn {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Coming+Soon);
