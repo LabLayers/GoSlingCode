@@ -6,7 +6,7 @@ block content
     .container
       h1.lead Go Sling Code!
       p.lead
-        | An interactive code tutorial website tailored for young kids.
+        | A crowdsourced interactive code tutorial website tailored for young kids.
       if !user
         if secrets.githubAuth
           a.btn.btn-block(href='/auth/github')
@@ -16,10 +16,13 @@ block content
         a.btn(onclick="launch('login')")
           i.fa.fa-key
           | Login
+        br
+        br
       iframe(src='http://www.youtube.com/embed/nKIu9yen5nc' style='border:none;margin:auto; width: 100%; height: 500px;')
   section
     .row
       .grid-4
+        br
         img(src='http://i.imgur.com/d3ZwdWM.png' style='max-width:100%;height:auto;')
       .grid-8
         h1 Learning to program is easy with Go Sling!
@@ -36,4 +39,4 @@ block content
           i.icon-ideas
           |   Pull Request to LabLayers/GoSling
       .grid-4
-        img(src='http://i.imgur.com/UujNxfA.jpg' style='max-width:100%;height:auto;')
+        img(src='http://i.imgur.com/gENL8JL.png' style='max-width:100%;height:auto;')
