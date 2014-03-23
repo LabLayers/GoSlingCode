@@ -67,7 +67,7 @@
 <div class="tutor">
 </div>
 <div class="container">
-  <textarea id="code_area">
+  <textarea id="code_area" autofocus>
   </textarea>
 </div>
 <div class="tab">
@@ -94,6 +94,7 @@ require([
     autofucus: true,
     lineWrapping: true
   });
+  doc.setValue('');
 
   setInterval( function() {refreshHTML(doc)}, 1000);
 });
