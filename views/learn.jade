@@ -1,30 +1,40 @@
 extends layout
 
 block content
-  header#learn(style='background: url(http://i.imgur.com/JbjF1PR.jpg);')
-    h1 Lesson
-    p.lead
-      | Find something new.
+  header.lead#learn(style='background: url(http://i.imgur.com/13V8twH.jpg?1);background-position:80%;background-size:cover')
+    h1 Learn
+    p
+      | Pick a topic and learn something new!
   section#lessons
     .row
       .grid-4
-        a(href='/track?html-basics')
+        a.html-basics(href='/tracks?html-basics')
           i.icon-window
           h2 HTML Basics
           p Learn the basics of web developement.
       .grid-4
-        a(href='/track?server-basics')
+        a.server-basics(href='/track?server-basics')
           i.icon-server
           h2 Server Basics
           p Get started with hosting your HTML code.
       .grid-4
-        a(href='/track?wordpress')
+        a.wordpress(href='/track?wordpress')
           i.icon-notebook
           h2 WordPress
           p Learn how to use the world's most popular CMS.
     .row
       .grid-4
-        a(href='/track?create-a-game')
+        a.create-a-ruby(href='/track?ruby')
+          i.icon-lollipop
+          h2 Ruby on Rails
+          p Get the basics of a language.
+      .grid-4
+        a.create-a-game(href='/track?create-a-game')
           i.icon-gameboy
           h2 Create a Game
           p Build an interactive flappy bird game.
+      .grid-4
+        a.embed-a-video(href='/track?embed-a-video')
+          i.icon-projector
+          h2 Embedding Content
+          p Embed media from your favorite sites.

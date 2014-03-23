@@ -1,11 +1,41 @@
 extends layout
 
 block content
-  header#learn(style='background: url(http://i.imgur.com/JbjF1PR.jpg);')
-    h1 Tracks
+  .headerbar
+    span HTML Basics
+    .right
+      a(href='/html-basics')
+        i.icon-arrow-left
+      a(href='/tracks?html-basics')
+        i.icon-more
+      a(href='/html-basics-part-1')
+        i.icon-arrow-right
+  br
+  br
+  header#learn(style='background: url(http://i.imgur.com/piIqcLp.jpg);background-size: cover;')
+    h1 Track: HTML Basics
     p.lead
-      | Learn from the world's experts in coding and beyond.
-  section
-    h1 Create Something Awesome
-    p.lead
-      | Marketing Material Here
+      | Learn the basics of Web Developement.
+    i.icon-window.right
+  section#lessons
+    h1 Lessons
+    .html-basics.lesson(href='/code?html-basics-part-1')
+      i.icon-window
+      h2 HTML Basics, Part 1
+      a.btn(href='/code?html-basics-part-1')
+        i.icon-direction(style='font-size:inherit')
+        |   Continue This Lesson
+      | &nbsp; &nbsp;
+      a.btn(href='https://github.com/LabLayers/goslingcode/blob/master/html/html-basics-part-1.md')
+        i.icon-github(style='font-size:inherit')
+        |   Markdown on GitHub
+    .html-basics.lesson(href='/code?html-basics-part-2')
+      i.icon-window
+      h2 HTML Basics, Part 2
+      a.btn(href='/code?html-basics-part-2')
+        i.icon-direction(style='font-size:inherit')
+        |   Continue This Lesson
+      | &nbsp; &nbsp;
+      a.btn(href='https://github.com/LabLayers/goslingcode/blob/master/html/html-basics-part-2.md')
+        i.icon-github(style='font-size:inherit')
+        |   Markdown on GitHub

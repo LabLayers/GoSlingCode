@@ -1,6 +1,15 @@
 extends code-layout
 
 block content
+  .headerbar
+    span HTML Basics, Part 2
+    .right
+      a(href='/html-basics-part-1')
+        i.icon-arrow-left
+      a(href='/tracks?html-basics')
+        i.icon-more
+      a(href='/html-basics-part-3')
+        i.icon-arrow-right
   link(rel='stylesheet', type='text/css', href='js/jquery.js')
   link(rel='icon', type='image/png', href='favicon.png')
   link(rel='stylesheet', type='text/css', href='css/codemirror.css')
@@ -8,12 +17,6 @@ block content
   script(type='text/javascript', src='js/codemirror.js')
   script(type='text/javascript', src='js/require.js')
   link(rel='stylesheet', href='main.css')
-  .headerbar
-    span HTML Basics, Part 1
-    .right
-      i.arrow-left
-      i.more
-      i.arrow-right
   img.csj(src='img/csj.png', width='70', height='70')
   .tutor-arrow
   .tutor
@@ -59,9 +62,9 @@ block content
       }
       next();
     });
-    
-    
-    
+
+
+
 
 
     function next(){
@@ -82,4 +85,3 @@ block content
       });
       index++;
     }
-    
