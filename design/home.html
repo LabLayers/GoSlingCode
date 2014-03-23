@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Base</title>
+  <title>Go Sling</title>
 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +15,74 @@
   <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" type="text/css" href="jquery.js">
+  
+  <link rel="stylesheet" type="text/css" href="lib/codemirror.css">
+  <link rel="stylesheet" type="text/css" href="monokai.css">
+  <script type="text/javascript" src="lib/codemirror.js"></script>
+  
+  <script type="text/javascript" src="require.js"></script>
   <link rel="stylesheet" href="main.css">
-  <script src="js/modernizr.js"></script>
 </head>
 <body>
 
-    <div class="login">
-      <form>
-        <fieldset>
-          <h1 class="logo">Kiddy Hacks</h1>
-          <input type="text" placeholder="Username"><br><br>
-          <input type="password" placeholder="Password"><br><br>
-          <input type="submit" value="Go!" class="button">
-        </fieldset>
-      </form>
-    </div>
+<div class="sidebar">
+  <ul>
+    <li>
+      <a href="#">
+        <span class="title">Go Sling</span>
+        <hr>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Hello World
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Paragraphs
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Formatting
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Some other shit
+      </a>
+    </li>
+</div>
 
+<div class="container">
+  <textarea id="code_area">
+  </textarea>
+</div>
+<div class="html_area">
+</div>
+<script type="text/javascript">
+  function refreshHTML(doc)
+{
+  var html_val = doc.getValue();
+  $('.html_area').html(html_val);
+  return;
+}
+require([
+  "lib/codemirror", "mode/htmlmixed/htmlmixed"
+], function(CodeMirror) {
+  var doc = CodeMirror.fromTextArea(document.getElementById("code_area"), {
+    lineNumbers: true,
+    mode: "htmlmixed",
+    theme: "monokai",
+    lineWrapping: true
+  });
 
+  setInterval( function() {refreshHTML(doc)}, 1000);
+});
+</script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/default.js"></script>
 
