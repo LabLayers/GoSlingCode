@@ -1,0 +1,172 @@
+body 
+{
+	background-image: url('bg.png');
+    height: 100%;
+    width: 100%;
+}
+
+.button, .button:active
+{
+	outline: none;
+	border-radius: 2px;
+}
+
+.login input[type="text"], .login input[type="password"]
+{
+	padding: 15px;
+	outline: none;
+	border-radius: 2px;
+	transition: 0.2s;
+	font-weight: 200;
+}
+.login input[type="text"], .login input[type="email"]
+{
+	padding: 15px;
+	outline: none;
+	border-radius: 2px;
+	transition: 0.2s;
+	font-weight: 200;
+	width: 100%;
+}
+.links-logo{
+	color: white;
+
+}
+.links-logo:hover{
+	text-decoration: underline;
+}
+.login input[type="text"]:focus, .login input[type="email"]:focus
+{
+	border: 1px solid #00cc00;
+	box-shadow: 0px 0px 5px #00cc00;
+}
+
+.login input[type="text"]:focus, .login input[type="password"]:focus
+{
+	border: 1px solid #00cc00;
+	box-shadow: 0px 0px 5px #00cc00;
+}
+
+.login input[type="text"], .login input[type="password"], .button
+{
+	width: 400px;
+}
+
+.login
+{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -250px 0 0 -200px;
+}
+
+.register{
+	margin: -275px 0 0 -200px !important;
+}
+
+.logo
+{
+	color: white;
+	text-align: center;
+	font-family:  'Courgette', cursive;
+}
+<<<<<<< HEAD:design/main.css
+
+.sidebar
+{
+	background-color: #333;
+	background-image: url('sbg.png');
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 200px;
+}
+
+.sidebar a
+{
+	text-decoration: none;
+	color: #ccc;
+	outline: none;
+}
+
+.sidebar > ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li
+{
+	padding: 30px;
+	font-size: 13pt;
+	transition: 0.1s;
+	text-shadow: 0.1em 0.1em 0.05em #333
+}
+
+.sidebar li:first-child
+{
+	padding-bottom: 0px;	
+	margin-bottom: 0px;	
+}
+
+.sidebar li:hover:not(:first-child)
+{
+	background-color: #333;
+	cursor: pointer;
+	/*font-size: 14pt;*/
+	text-shadow: 0.5em 0.50em 0.05em #black;	
+	border-left: 5px solid #ff2800;
+}
+
+.sidebar .title
+{
+	font-family:  'Courgette', cursive;
+	font-size: 17pt;
+	cursor: default;
+}
+
+.sidebar hr
+{
+	padding-bottom: 0px;
+	margin-bottom: 15px;	
+	cursor: default;
+}
+
+.container
+{
+	position: absolute;
+	top: 87px;
+	left: 250px;
+	width: 550px;
+	float: left;
+}
+
+.html_area
+{
+	width: 550px;
+	float: left;
+	height: 600px;
+	background: white;
+	position: absolute;
+	left: 820px;
+	top: 87px;
+	border-radius: 2px;
+	padding: 7px;
+}
+
+.CodeMirror
+{
+	border-radius: 2px;
+	height: 600px;
+=======
+.logo-min
+{
+	color: white;
+	text-align: center;
+	font-size: 12pt !important;
+>>>>>>> 7e4f1cb0e7275ff0c6929cf44a637a87b61cce21:design/css/main.css
+}
