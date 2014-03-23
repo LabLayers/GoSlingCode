@@ -1,8 +1,16 @@
+@import "lib/preboot/normalize";
 @import (less) "lib/animate.css";
 @import (less) "lib/font-awesome.min.css";
-@import "lib/bootstrap/bootstrap";
-@import "lib/bootstrap-social";
-@import "themes/flatly";
+@import "lib/preboot/preboot";
+@import "lib/preboot/pygments";
+
+@import "lib/buttons";
+@import "lib/grid";
+
+// Vars
+// -------------------------
+
+@sidebar-width: 250px;
 
 // Scaffolding
 // -------------------------
@@ -12,17 +20,18 @@ html, body {
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: @brand-primary;
 }
 
 #wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -100px;
-  /* Pad bottom by footer height + (optional) extra spacing */
-  padding: 0 0 140px;
 }
 
 #footer {
@@ -104,11 +113,11 @@ body {
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     height: 100%;
-    background: @gray-dark;
+    background: @black-80;
     width: 100%;
     max-width: @sidebar-width;
     font-size: 13pt;
@@ -124,7 +133,7 @@ body {
       transition: 0.1s;
       padding: 30px!important;
       &:hover {
-        background-color: lighten(@gray-dark,15%);
+        background-color: @black-70;
         cursor: pointer;
         text-shadow: 0.5em 0.50em 0.05em #black;
         border-left: 5px solid #FF2800;
