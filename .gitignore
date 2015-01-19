@@ -2,3 +2,4 @@ node_modules/
 _site/
 config/secrets.js
 readme.md
+README.md
